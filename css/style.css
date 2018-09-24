@@ -1,0 +1,335 @@
+/*   
+
+Theme Name: PandoraBox
+Theme URI: iltaen.com/pandorabox
+Description: Mobile Develop Onepage WordPress Template
+Author: iltaen
+Author URI: http://themeforest.net/user/Iltaen
+License: GNU General Public License
+License URI: license.txt
+Tags: green, white, fluid-layout, responsive-layout, one-column, custom-colors, featured-images, full-width-template, post-formats, sticky-post, theme-options
+Version: 1.3.2
+
+*/
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+body, html, .main {
+    height: 100%;
+}
+
+*{
+	
+font-family: 'Droid Arabic Kufi', serif !important;	
+}
+
+ a , .whiteblock a , .socialblock .socialicon i:hover , .skillsblock .skillcontainer:hover .skillogo .logocontainer , .skillsblock .skillcontainer:hover .title , .blogblock .block-container .post .post-body .title a:hover, .blogblock .block-container .post .meta .type i:hover {          
+        color: #00a99d;
+        }
+      
+         input:focus,textarea:focus , .skillsblock .skillcontainer .wrapper .skillogo .logocontainer , .teamblock .block-container .teamcontainer .personal:hover .photo, .contactsblock .block-container .wrapper .mailbutton.active, .contactsblock .block-container .wrapper .mailbutton:hover, .contactsblock .block-container .wrapper .mailbutton.active { 
+        border-color: #00a99d;
+        }
+
+        *::selection, input::selection, textarea::selection {
+          background-color: #00a99d;
+        }
+
+        button, input.send, input[type="submit"], .hexagon .inner, .colorblock, .storebutton:hover, .iconmenu, .mainmenu, .pb_slider .navigation:hover, .priceblock .block-container .pricetable .priceitem, .contactsblock .input-container input[type="submit"], .footerblock, .blogblock .navigation .page-numbers.current, .mainmenu .menuwrapper .menulist ul li ul li, .contactsblock .block-container .wrapper .contact-info a:hover, .contactsblock .block-container .wrapper .mailbutton.active {
+          background-color: #00a99d;
+       }
+
+       .hexagon .inner:before {
+        border-color: transparent transparent #00a99d transparent;
+       }
+
+       .hexagon .inner:after{
+        border-color: #00a99d transparent transparent  transparent;
+       }
+
+       .skillsblock .skillcontainer:hover .skillogo .logocontainer , .teamblock .block-container .teamcontainer .personal .photo
+      { border-color: #c8c8c8; }
+
+      .comments .commentlist .comment-article:hover .comment-block img{
+        box-shadow: 0 0 0 3px #fff, 0 0 0 6px #00a99d;
+      }
+		
+  		#bg{
+  			background-color: #e5e5e5;
+  		}
+
+      body{
+        font-size: ;
+      }
+	   @media screen and (-webkit-min-device-pixel-ratio:0) {
+        @font-face {
+          font-family: 'FontAwesome';
+          src: url('http://pandorabox.iltaen.com/wp-content/plugins/font-awesome/assets/font/fontawesome-webfont.svg') format('svg');
+        }
+
+        @font-face {
+            font-family: 'Lato';
+            src: url('http://pandorabox.iltaen.com/wp-content/themes/PandoraBox/font/lato-regular.svg') format('svg');
+            font-weight: normal;
+            font-style: normal; 
+        }
+
+        @font-face {
+            font-family: 'Lato';
+            src: url('http://pandorabox.iltaen.com/wp-content/themes/PandoraBox/font/lato-bold.svg') format('svg');
+            font-weight: 700;
+        }
+
+        @font-face {
+            font-family: 'Lato';
+            src: url('http://pandorabox.iltaen.com/wp-content/themes/PandoraBox/font/lato-light.svg') format('svg');
+            font-weight: 300;
+        }
+      } 
+
+      body {
+          font-family: 'Lato';
+      }
+      .mainmenu{position: fixed;}</style>
+
+<script type="text/javascript">
+          if (document.getElementById('map-canvas')) getMap("Cockle bay <br /> Auckland <br /> New Zealand", "Cockle bay <br /> Auckland <br /> New Zealand");
+
+          WebFont.load({
+            google: {
+              families: ['Lato:300,400,700,300italic,400italic,700italic']
+            }
+            });
+</script>
+
+<link rel="stylesheet" media="screen" type="text/css" href="http://pandorabox.iltaen.com/wp-content/themes/PandoraBox/admin/colorpicker/css/colorpicker.css" />
+<script type="text/javascript" src="http://pandorabox.iltaen.com/wp-content/themes/PandoraBox/admin/colorpicker/js/colorpicker.js"></script>
+
+<style type="text/css">
+	.style-control{
+		position: fixed;
+		z-index: 2000;
+		left: -400px;
+		top: 30%;
+		background: #f0f0f0;
+		width: 400px;
+		box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+
+		  -webkit-transition: all 0.5s ease;
+		  -moz-transition: all 0.5s ease;
+		  -ms-transition: all 0.5s ease;
+		  -o-transition: all 0.5s ease;
+		  transition: all 0.5s ease;
+	}
+
+	.style-control.active{
+		left: 0;
+	}
+
+	.style-control .wrapper{
+		padding: 20px;
+	}
+
+	.style-control h3{
+		font-size: 22px;
+		color: #777;
+		margin: 5px;
+		font-weight: 400;
+	}
+
+	.style-control p{
+		margin: 20px 5px 10px 0;
+		padding-left: 5px;
+		color: #555;
+		border-left: 3px solid #00a99d;
+	}
+
+	#toggle{
+		position: absolute;
+		right: -60px;
+		top: 0;
+		width: 55px;
+		height: 55px;
+		text-align: center;
+		background: #f0f0f0;
+		border-right: 4px solid #bbb;
+		border-left: 1px solid #ddd;
+		cursor: pointer;
+		color: #777;
+	}
+
+	#toggle i{
+		margin-top: 10px;
+		display: inline-block;
+	}
+
+	#toggle:hover{
+		color: #00a99d;
+		border-right-color: #00a99d;
+	}
+
+	.style-control .style-select{
+		width: 40px;
+		height: 40px;
+		border: 3px solid #ddd;
+		margin: 0 20px 20px 0;
+		float: left;
+		cursor: pointer;
+	}
+
+	.style-control .style-select.active{
+		border-color: #00a99d;
+	}
+
+	.style-control .style-select:hover{
+		border-color: #aaa;
+	}
+
+	.style-control #style-color{
+		background-color: #00a99d;
+	}
+
+	.style-control #style-pattern{
+		background: url('http://pandorabox.iltaen.com/wp-content/themes/PandoraBox/admin/colorpicker/img/th-pattern.png');
+	}
+
+	.style-control #style-photo{
+		background: url('http://pandorabox.iltaen.com/wp-content/themes/PandoraBox/admin/colorpicker/img/th-photo.png');
+	}
+
+
+	@media screen and (max-width: 540px) {
+		.style-control{
+			display: none;
+		}
+	}
+	
+	
+	img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+
+.who:after , .khdma:after , .shrek:after ,.why:after{
+	z-index: 2;
+    content: " ";
+    display: block;
+    padding-top: 7px;
+    border-bottom: 2px solid #b7bbbf;
+    width: 73px;
+    margin: 0 auto;
+	
+	}
+	
+	
+	
+	/* Choose us block */
+.choose-us-block {
+	padding-top: 60px;
+}
+.choose-us-block h4 {
+	margin-bottom: 35px;
+}
+.choose-us-block h4 a {
+	color: #1ea9e3;
+}
+.choose-us-block .panel-group {
+	padding-top: 50px;
+}
+.choose-us-block .panel-default {
+	border-radius: 0 !important;
+	border: none;
+	background: none;
+	margin-bottom: 0 !important;
+	padding-bottom: 14px;
+}
+.choose-us-block .panel-default > .panel-heading {
+	border: none;
+	background: none;
+	padding: 0;
+}
+.choose-us-block .panel-default > .panel-heading + .panel-collapse .panel-body {
+	border: none;
+	padding: 0 32px 0 0;
+}
+.choose-us-block .panel-default h5 {
+	font: 300 19px "Open Sans", Arial, sans-serif;
+	padding: 0;
+	margin: 0 0 5px;
+}
+.choose-us-block .panel-default .accordion-toggle:before {
+	content: "";
+	width: 21px;
+	height: 21px;
+	display: inline-block;
+	background: #e54a1a url(../img/toggle-icons.png) no-repeat 6px 10px;
+	border-radius: 50% !important;
+	margin-left: 10px;
+	position: relative;
+	top: 4px;
+}
+.choose-us-block .panel-default .collapsed:before {
+	background: #495764 url(../img/toggle-icons.png) no-repeat 6px -148px;
+}
+.choose-us-block .panel-default .panel-title:hover .collapsed:before {
+	
+}
+.choose-us-block .panel-default .accordion-toggle, .choose-us-block .panel-default .accordion-toggle:focus, .choose-us-block .panel-default .accordion-toggle:hover, .choose-us-block .panel-default .accordion-toggle:active {
+	color: #1ea9e3  !important;
+	text-decoration: none;
+}
+.choose-us-block .panel-default .collapsed {
+	color: #5f6f7e !important;
+}
+
+
+.choose-us-block .panel-default .collapsed:before {
+    background-color: #495764 !important;
+}
+
+.choose-us-block .panel-default .accordion-toggle:before {
+    background-color: #01bf9d;
+float:right;
+	}
+	
+	.panel-body ol {
+		
+		list-style:none;
+	}
+	
+	
+	.header , .fixNav {
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    background: #00a99d;
+	width: 100%;
+}
+	
+	
+	
+	
+	
+	
+
+.message-block{
+	background-image:url(../img/morni_muck_up_car3.png);
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
